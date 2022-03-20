@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {Grid, Fab} from '@mui/material'
-import ClassGridItem from '../ClassGridItem/ClassGridItem'
+import ClassGridItem from './ClassGridItem/ClassGridItem'
 import AddClassDialog from './AddDialog/AddClass'
 
 import { SpeedDialIcon } from '@mui/material'
