@@ -1,0 +1,18 @@
+.grid-card{
+    overflow: hidden;
+}
+.grid-header{
+    height: 100px;
+    background: url('https://www.gstatic.com/classroom/themes/img_learnlanguage.jpg');
+    background-position: center;
+}
+.grid-body{
+    padding:10px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap:10px;;
+}
+.class-name-header{
+    display: flex;
+    justify-content: space-between;
+}

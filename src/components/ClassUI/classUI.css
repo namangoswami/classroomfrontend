@@ -1,0 +1,65 @@
+.class-ui-container{
+    height:max-content;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.65);
+    margin:10px;
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    height: 1px;
+}
+.scrollable-stack{
+    position: relative;
+    overflow: auto;
+    max-height: 85vh;
+    height: 100%;
+}
+.data-stack{
+
+    border-radius: 20px;
+}
+.student-stack{
+    border-radius: 0px;
+}
+.pdf-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 700px !important;
+}
+.pdf-container canvas{
+    height:700px !important;
+}
+@media (max-height:900px) {
+    .pdf-container{
+        height: 500px !important;
+    }
+    .pdf-container canvas{
+        height: 500px !important;
+        width: 282px !important;
+    }
+}
+.pdf-container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+.video-item{
+    border-radius: 10px;
+}
+.student-list-item{
+    display: flex;
+    align-items: center;
+    padding: 10px 2px;
+    column-gap: 10px;
+}
+.hidden{
+    display: none !important;
+}
+.select-file-div{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}

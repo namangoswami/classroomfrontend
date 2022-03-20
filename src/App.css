@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+.container{
+  display: flex;
+  background-image: url('https://picsum.photos/1920/1080?random=1');
+  height: 100%;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+}
+.card{
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 500px;
+}
+.card-footer{
+  display: flex;
+  padding:12px 12px;
+  padding-top: 0px;;
+}
+.card-body{
+  padding:12px 24px ;
+}
+.form-group{
+  position: relative;
+}
+.heading{
+  font-size: 35px;
+}
+.heading-small{
+  font-size: 25px;
+}
+.heading-xs{
+  font-size: 22px;
+}
+.heading-medium{
+  font-size: 27px;
+}

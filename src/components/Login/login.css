@@ -1,0 +1,19 @@
+.login-container{
+    justify-content: center;
+    align-items: center;
+  background-image: url('https://picsum.photos/1920/1080?random=2') !important;
+}
+.login-card .card-footer{
+    justify-content: flex-end;
+}
+.heading{
+    text-align: center;
+}
+.form-group{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.login-card{
+    width: 500px;
+}
