@@ -26,10 +26,10 @@ function AddDialog({open, setOpen}) {
   return (
     
     <Dialog open={open} fullWidth maxWidth={'sm'} onClose={handleClose} style={{color:''}}>
-    <DialogTitle>Add Student</DialogTitle>
+    <DialogTitle>Add Class</DialogTitle>
     <DialogContent>
       <DialogContentText>
-          Add Student with the following Details
+          Add Class with the following Details
       </DialogContentText>
       <TextField
         autoFocus

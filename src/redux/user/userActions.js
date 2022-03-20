@@ -8,7 +8,7 @@ export const login=(user, navigation)=>async (dispatch)=>{
         axios.defaults.headers.common['Authorization'] = `JWT ${data.user.token}`;
         localStorage.setItem('user', JSON.stringify(data.user))
         dispatch({type:LOGIN, payload:data.user});
-        console.log(data);
+        // console.log(data);
         return true;
     } catch (error) {
         console.log(error.message);
@@ -26,7 +26,7 @@ export const logout=()=>async (dispatch)=>{
 }
 export const addClass=(classObj)=>async(dispatch)=>{
     try {
-        console.log(classObj)
+        // console.log(classObj)
         await api.updateClass(classObj);
         dispatch({type:ADD_CLASS, payload:classObj})
     
@@ -36,7 +36,7 @@ export const addClass=(classObj)=>async(dispatch)=>{
 }
 export const getClasses=(_id)=>async(dispatch)=>{
     try {
-        console.log('in')
+        // console.log('in')
         const {data}=await api.getClasses(_id);
         console.log(data);
         dispatch({type:UPDATE_CLASSES, payload:data.classObjAr})

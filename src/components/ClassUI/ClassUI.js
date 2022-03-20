@@ -16,9 +16,9 @@ function ClassUI() {
   const [openStudent, setStudentOpen]=useState(false);
   const [loading, setLoading]=useState(false);
   const classObj=useSelector(state=>state.class);
+  const userObj=useSelector(state=>state.user);
   const params=useParams();
   const dispatch=useDispatch();
-  console.log(classObj)
   useEffect(()=>{
     dispatch(getClass(params.classId));    
     if(classObj._id==='')
@@ -48,7 +48,7 @@ function ClassUI() {
                 <StudentList/>
                 
             </Grid>
-           <SpeedDial setFileDialogOpen={setFileOpen} setStudentDialogOpen={setStudentOpen} />
+            {userObj.elevation!=0&&<SpeedDial setFileDialogOpen={setFileOpen} setStudentDialogOpen={setStudentOpen} />}
         </Grid>
         <AddDialogFile open={openFile} setOpen={setFileOpen}/>
         <AddDialogStudent open={openStudent} setOpen={setStudentOpen}/>

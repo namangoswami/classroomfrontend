@@ -3,7 +3,7 @@ import { ADD_DATA, ADD_STUDENT, UPDATE_CURRENT } from './classesTypes';
 
 export const getClass=(classId)=>async (dispatch)=>{
     try {
-        console.log(classId);
+        // console.log(classId);
         const {data}=await api.getClass(classId);
         dispatch({type:UPDATE_CURRENT, payload:data.classObj})
     } catch (error) {
@@ -22,7 +22,7 @@ export const addStudent=(student, classId)=>async (dispatch)=>{
 }
 export const addDoc=(doc, classId)=>async(dispatch)=>{
     try {
-        console.log(classId);
+        // console.log(classId);
          api.addDoc({ doc, classId});
         dispatch({type:ADD_DATA, payload:doc})
     } catch (error) {
