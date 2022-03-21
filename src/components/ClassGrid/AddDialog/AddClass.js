@@ -13,7 +13,8 @@ function AddDialog({open, setOpen}) {
       section:'',
       className:'',
       subject:'',
-      teacher:user.id
+      teacher:user.id,
+      students:[]
   })
   const handleChange=(e)=>{
     setDialogData({...dialogData, [e.target.id]:e.target.value});
