@@ -40,9 +40,10 @@ function ClassGrid() {
             {data.map((i)=><Grid item xs={3}><ClassGridItem data={i} key={i._id} /></Grid>)}
         </Grid>
         <AddClassDialog open={open} setOpen={setOpen} />
-        <Fab  onClick={()=>setOpen(true)} style={{position:'absolute', bottom:26, right:26}} size="large" color="primary" aria-label="Add Class">
+        {user._doc.elevation===1&&<Fab  onClick={()=>setOpen(true)} style={{position:'absolute', bottom:26, right:26}} size="large" color="primary" aria-label="Add Class">
             <SpeedDialIcon/>
         </Fab>
+        }
       </div>
   )
 }

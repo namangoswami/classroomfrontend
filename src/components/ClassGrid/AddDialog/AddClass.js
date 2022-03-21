@@ -13,7 +13,7 @@ function AddDialog({open, setOpen}) {
       section:'',
       className:'',
       subject:'',
-      teacher:user.id,
+      teacher:user._doc._id,
       students:[]
   })
   const handleChange=(e)=>{
@@ -21,6 +21,7 @@ function AddDialog({open, setOpen}) {
   }
   const dispatch=useDispatch();
   const handleSubmit=()=>{
+    console.log(dialogData);
     dispatch(addClass(dialogData));
   }
  

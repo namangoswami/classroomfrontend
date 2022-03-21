@@ -48,7 +48,7 @@ function ClassUI() {
                 <StudentList/>
                 
             </Grid>
-            {userObj.elevation!=0&&<SpeedDial setFileDialogOpen={setFileOpen} setStudentDialogOpen={setStudentOpen} />}
+            {userObj._doc.elevation===1&&<SpeedDial setFileDialogOpen={setFileOpen} setStudentDialogOpen={setStudentOpen} />}
         </Grid>
         <AddDialogFile open={openFile} setOpen={setFileOpen}/>
         <AddDialogStudent open={openStudent} setOpen={setStudentOpen}/>
