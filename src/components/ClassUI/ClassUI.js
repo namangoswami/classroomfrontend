@@ -21,7 +21,7 @@ function ClassUI() {
   const dispatch=useDispatch();
   useEffect(()=>{
     dispatch(getClass(params.classId));    
-    if(classObj._id==='')
+    if(classObj._id!==params.classId)
     {
       setLoading(true);
     }
