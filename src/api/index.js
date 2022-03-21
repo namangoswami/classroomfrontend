@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url='http://localhost:5000';
+const url='https://classroom-backend-naman.herokuapp.com';
 
 export const login=(user)=>axios.post(url+'/login',{...user} );
 

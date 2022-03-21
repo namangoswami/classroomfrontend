@@ -19,7 +19,7 @@ function ClassGridItem({data}) {
                 <span className='heading-medium'>{data.subject}</span>
             </div>
             <div>
-                <span>{data.studentsLength} Student{data.studentsLength!==1?'s':''}</span>
+                <span>{data.students.length} Student{data.students.length!==1?'s':''}</span>
             </div>
         </div>
     </div>

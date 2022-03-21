@@ -26,7 +26,7 @@ function ClassGrid() {
         dispatch(getClasses(user.id));
         
     },[data.length]);
-    useEffect(()=>{console.log(data)})
+   
     if(loading)
     {
         return<div style={{flex:1,display:'flex', justifyContent:'center', alignItems:'center'}} >
